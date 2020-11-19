@@ -3,8 +3,7 @@
 }
 
 .my-post-header {
-    padding-bottom: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1.6em;
 }
 
 .my-post-header h1 {
@@ -14,15 +13,13 @@
 
 .my-post-header section {
     margin-bottom: 1em;
-    font-size: 1.4em;
-    opacity: .8;
+    font-size: 1.2em;
     color: var(--light-font-color);
 }
 
 .my-post-content {
     word-break: break-word;
     font-size: 1.4em;
-    line-height: 1.6;
 }
 
 .post {
@@ -40,7 +37,6 @@
     position: relative;
     font-size: 1.4em;
     margin-top: 1em;
-    padding-top: 0.8em;
     font-weight: bold;
 }
 
