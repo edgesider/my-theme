@@ -1,5 +1,7 @@
 # My Theme
 
+示例：[Ykai's Blog](https://blog.ykai.top)
+
 一个平常无奇、能让我感到亲切与安稳的博客主题。
 
 一切都要悄悄的。
