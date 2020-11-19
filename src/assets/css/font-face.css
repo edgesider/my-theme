@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica'), url('../fonts/helvetica.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica Rounded Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Rounded Bold'), url('../fonts/helvetica-rounded-bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Menlo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Menlo Regular'), url('../fonts/menlo-regular.woff') format('woff');
+}

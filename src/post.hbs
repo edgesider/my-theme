@@ -1,0 +1,26 @@
+{{!< default}}
+
+{{#post}}
+    <div class="my-post-back">
+        <a href="/">< 返回博客</a>
+    </div>
+    <article class="{{post_class}} typo">
+        <header class="my-post-header">
+            <h1>{{title}}</h1>
+            <section>
+                <time datetime="{{date format="YYYY-MM-DD"}}">
+                    {{date format="YYYY/M/D"}}
+                </time>
+            </section>
+            <hr>
+        </header>
+        <div class="my-post-content">{{content}}</div>
+    </article>
+    <ul class="my-tags">
+        {{#foreach tags}}
+            <li class="tag">
+                <a href="{{url}}">{{name}}</a>
+            </li>
+        {{/foreach}}
+    </ul>
+{{/post}}

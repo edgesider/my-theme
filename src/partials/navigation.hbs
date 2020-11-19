@@ -1,0 +1,7 @@
+<ul class="my-blog-nav">
+    {{#foreach navigation}}
+        <li class="my-blog-nav-item{{#if current}} my-blog-nav-current{{/if}}" role="presentation">
+            <a {{#unless current}}href="{{url absolute="true"}}{{/unless}}">{{label}}</a>
+        </li>
+    {{/foreach}}
+</ul>

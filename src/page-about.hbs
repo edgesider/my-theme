@@ -1,0 +1,18 @@
+{{!< default}}
+{{#post}}
+    <header class="my-blog-header">
+        <div class="my-title-bar">
+            <h1 class="my-blog-title"><a href="{{@site.url}}">{{@site.title}}</a></h1>
+            <div class="my-blog-description">{{@site.description}}</div>
+        </div>
+        <nav>
+            {{navigation}}
+        </nav>
+    </header>
+
+    <main>
+        <article class="my-post-about {{post_class}} typo">
+            <div class="my-post-content">{{content}}</div>
+        </article>
+    </main>
+{{/post}}

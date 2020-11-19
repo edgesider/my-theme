@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <title>{{meta_title}}</title>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="{{asset 'css/my.css'}}">
+    <link rel="stylesheet" href="{{asset 'css/typo.css'}}">
+    <link rel="stylesheet" href="{{asset 'css/kg.css'}}">
+    <link rel="stylesheet" href="{{asset 'css/font-face.css'}}">
+    <link rel="stylesheet" href="{{asset 'css/index.css'}}">
+    <link rel="stylesheet" href="{{asset 'css/post.css'}}">
+    <link rel="stylesheet" href="{{asset 'css/a11y-dark.min.css'}}">
+
+    {{ghost_head}}
+</head>
+<body>
+<div class="container my">
+    {{{body}}}
+</div>
+{{ghost_foot}}
+<script src="{{asset 'js/highlight.min.js'}}"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

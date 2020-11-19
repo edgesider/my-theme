@@ -1,0 +1,57 @@
+.my-post-back {
+    font-size: 1.4rem;
+}
+
+.my-post-header {
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+.my-post-header h1 {
+    margin: 1em 0 .4em;
+    font-size: 2.2rem;
+}
+
+.my-post-header section {
+    margin-bottom: 1em;
+    font-size: 1.4em;
+    opacity: .8;
+    color: var(--light-font-color);
+}
+
+.my-post-content {
+    word-break: break-word;
+    font-size: 1.4em;
+    line-height: 1.6;
+}
+
+.post {
+    margin-bottom: 1em;
+}
+
+.post h2::before {
+    content: "# ";
+    color: var(--light-font-color);
+    position: absolute;
+    left: -1em;
+}
+
+.post h2 {
+    position: relative;
+    font-size: 1.4em;
+    margin-top: 1em;
+    padding-top: 0.8em;
+    font-weight: bold;
+}
+
+.post h3 {
+    font-size: 1.25em;
+}
+
+.post h4 {
+    font-size: 1.1em;
+}
+
+.post h5, h6 {
+    font-size: 1em;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "my-theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp dev",
+    "check": "gulp build && gscan dist"
+  },
+  "devDependencies": {
+    "@types/gulp": "^4.0.7",
+    "@types/highlightjs": "^10.1.0",
+    "gscan": "^3.6.0",
+    "gulp": "^4.0.2"
+  },
+  "author": {
+    "name": "ykai",
+    "email": "yingkaidang@gmail.com"
+  },
+  "keywords": [
+    "ghost-theme"
+  ],
+  "engines": {
+    "ghost-api": "v3"
+  },
+  "config": {
+    "posts_per_page": 8
+  }
+}

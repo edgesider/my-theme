@@ -1,0 +1,68 @@
+.my-post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.my-post-list > .my-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: .6rem;
+}
+
+.my-post-list > .my-item > h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.my-post-list > .my-item > time {
+    font-family: "Menlo", serif;
+    font-size: 1rem;
+    margin-left: 1rem;
+    color: var(--light-font-color);
+}
+
+.my-blog-header {
+    margin-bottom: 1.4rem;
+}
+
+.my-blog-title {
+    font-size: 2rem;
+    margin: 0 0 2px;
+}
+
+.my-blog-title a:hover {
+    color: unset;
+}
+
+.my-blog-description {
+    font-size: 1.2rem;
+}
+
+.my-blog-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    font-family: 'Menlo', serif;
+}
+
+.my-blog-nav-item {
+    padding-right: 1rem;
+    margin-right: 1rem;
+    border-right: 1px #666 dotted;
+}
+
+.my-blog-nav-item > a {
+    color: var(--emb-color);
+}
+
+.my-blog-nav-item:last-child {
+    border-right: none;
+}
+
+.my-blog-nav-current a {
+    text-decoration: none;
+    color: var(--light-font-color);
+}

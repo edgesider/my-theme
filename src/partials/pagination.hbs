@@ -1,0 +1,9 @@
+<nav>
+    {{#if prev}}
+        <a href="{{page_url prev}}">之后的文章</a>
+    {{/if}}
+    {{page}}/{{pages}}
+    {{#if next}}
+        <a href="{{page_url next}}">先前的文章</a>
+    {{/if}}
+</nav>

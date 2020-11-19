@@ -1,0 +1,26 @@
+{{!< default}}
+<header class="my-blog-header">
+    <div class="my-title-bar">
+        <h1 class="my-blog-title"><a href="{{@site.url}}">{{@site.title}}</a></h1>
+        <div class="my-blog-description">{{@site.description}}</div>
+    </div>
+    <nav>
+        {{navigation}}
+    </nav>
+</header>
+
+<main role="main">
+    <section>
+        <ul class="my-post-list">
+            {{#foreach posts}}
+                <li class="my-item">
+                    <h2><a href="{{url}}">{{{title}}}</a></h2>
+                    <time datetime="{{date format="YYYY-MM-DD"}}">
+                        {{date format="YYYY/M/D"}}
+                    </time>
+                </li>
+            {{/foreach}}
+        </ul>
+        {{pagination}}
+    </section>
+</main>
