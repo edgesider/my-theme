@@ -25,6 +25,25 @@ body {
     color: var(--font-color);
 }
 
+@media only screen and (max-width: 540px) {
+    .container {
+        width: 90%;
+        margin: 0 auto 5rem;
+    }
+
+    .post.typo h2::before {
+        position: relative;
+        left: 0;
+    }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 960px) {
+    .container {
+        width: 70%;
+        margin: 0 auto 5rem;
+    }
+}
+
 a {
     color: var(--font-color);
     text-decoration: none;
