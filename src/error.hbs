@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <title>{{meta_title}}</title>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="{{asset 'css/my.css'}}">
+    <link rel="stylesheet" href="{{asset 'css/font-face.css'}}">
+    <style>
+        .my * {
+            opacity: .7;
+            margin: 0;
+        }
+
+        .my h1 {
+            line-height: 1.8;
+        }
+
+        .my h2 {
+            line-height: 1.4;
+        }
+
+        .my a {
+            display: block;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container my">
+    <a href="/">< 返回博客</a>
+    <h1>出问题了</h1>
+    <h2>错误代码是 {{statusCode}}，错误信息是 {{message}}</h2>
+</div>
+</body>
+</html>
