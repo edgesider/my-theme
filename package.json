@@ -6,7 +6,8 @@
   "scripts": {
     "build": "gulp build",
     "dev": "gulp dev",
-    "check": "gulp build && gscan dist"
+    "check": "gulp build && gscan dist",
+    "clean": "gulp clean"
   },
   "devDependencies": {
     "@types/gulp": "^4.0.7",
