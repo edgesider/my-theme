@@ -4,7 +4,7 @@
     <div class="my-post-back">
         <a href="/">< 返回博客</a>
     </div>
-    <article class="{{post_class}} typo">
+    <article class="{{post_class}}">
         <header class="my-post-header">
             <h1>{{title}}</h1>
             <section>
@@ -14,7 +14,8 @@
             </section>
             <hr>
         </header>
-        <div class="my-post-content">{{content}}</div>
+        <div class="my-toc"></div>
+        <div class="my-post-content typo">{{content}}</div>
     </article>
     <ul class="my-tags">
         {{#foreach tags}}
@@ -23,4 +24,35 @@
             </li>
         {{/foreach}}
     </ul>
+    <div id="go-top"></div>
+
+    <script src="{{asset 'js/auto-toc.js'}}"></script>
+    <script>
+        /**
+         * reference: https://github.com/tscanlin/tocbot/blob/master/src/utils/make-ids.js
+         */
+        function makeIds() {
+            let content = document.querySelector('.my-post-content')
+            let headings = content.querySelectorAll('h1, h2, h3, h4, h5, h6, h7')
+            let headingMap = {}
+
+            Array.prototype.forEach.call(headings, function (heading) {
+                let id = heading.id ? heading.id : heading.textContent.trim().toLowerCase()
+                        .split(' ').join('-').replace(/[!@#$%^&*():]/ig, '').replace(/\//ig, '-')
+                headingMap[id] = !isNaN(headingMap[id]) ? ++headingMap[id] : 0
+                if (headingMap[id]) {
+                    heading.id = id + '-' + headingMap[id]
+                } else {
+                    heading.id = id
+                }
+            })
+        }
+
+        makeIds()
+        autoToc('.my-post-content', '.my-toc')
+
+        document.querySelector('#go-top').addEventListener('click', () => {
+            window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+        })
+    </script>
 {{/post}}

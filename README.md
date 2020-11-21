@@ -16,6 +16,12 @@
 
 ## TODO
 
-- [ ] 文章目录
-- [ ] 返回顶部
+- [x] 文章目录
+- [x] 返回顶部
 - [x] 错误页面
+
+## Thanks
+
+- [ghost-theme-Moegi](https://github.com/moegi-design/ghost-theme-Moegi)
+- [auto-toc](https://github.com/timaschew/auto-toc.js/)
+- [tocbot](https://github.com/tscanlin/tocbot)
