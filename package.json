@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gulp build",
+    "pack": "gulp build && zip -r my-theme-dev.zip dist",
     "dev": "gulp dev",
     "check": "gulp build && gscan dist",
     "clean": "gulp clean"
@@ -12,7 +13,7 @@
   "devDependencies": {
     "@types/gulp": "^4.0.7",
     "@types/highlightjs": "^10.1.0",
-    "gscan": "^3.6.0",
+    "gscan": "4.34.0",
     "gulp": "^4.0.2"
   },
   "author": {
@@ -22,9 +23,6 @@
   "keywords": [
     "ghost-theme"
   ],
-  "engines": {
-    "ghost-api": "v3"
-  },
   "config": {
     "posts_per_page": 8
   }
